@@ -1,7 +1,8 @@
 ## main
 
 ### ✨ Features and improvements
-
+- Support Vertical Perspective projection ([#5023](https://github.com/maplibre/maplibre-gl-js/pull/5023))
+- Toggle for Terrain Collision ([#5028](https://github.com/maplibre/maplibre-gl-js/pull/5028))
 - _...Add new stuff here..._
 
 ### 🐞 Bug fixes
