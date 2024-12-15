@@ -5,7 +5,6 @@
 - Toggle for Terrain Collision ([#5028](https://github.com/maplibre/maplibre-gl-js/pull/5028))
 - Add support for projection type expression as part of a refactoring of the transfrom and projection classes ([#5139](https://github.com/maplibre/maplibre-gl-js/pull/5139))
 - ⚠️ Support setting WebGL context options on map creation ([#5196](https://github.com/maplibre/maplibre-gl-js/pull/5196)). Previously supported WebGL context options like `antialias`, `preserveDrawingBuffer` and `failIfMajorPerformanceCaveat` must now be defined inside the `canvasContextAttributes` object on `MapOptions`.
->>>>>>> f1a70c0257f7ad7fc70e2a19b83a09a169406f89
 - _...Add new stuff here..._
 
 ### 🐞 Bug fixes
