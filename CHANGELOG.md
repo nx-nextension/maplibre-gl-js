@@ -8,6 +8,28 @@
 
 - _...Add new stuff here..._
 
+## 5.1.1
+
+### ✨ Features and improvements
+
+- Avoid setting marker opacity twice. ([#5441](https://github.com/maplibre/maplibre-gl-js/pull/5441))
+
+### 🐞 Bug fixes
+- Fix how padding is applied when using flyTo() with Globe ([#5406](https://github.com/maplibre/maplibre-gl-js/pull/5406))
+- Fix URL hash validation to support bearing range -180 to 180 ([#5461](https://github.com/maplibre/maplibre-gl-js/issues/5461))
+- Fix variable zoom tile calculation when padding is set ([#5486](https://github.com/maplibre/maplibre-gl-js/issues/5486))
+- Fix rendering Japanese symbols which are accidentally ignored. ([#5421](https://github.com/maplibre/maplibre-gl-js/pull/5421)
+
+## 5.1.0
+
+### ✨ Features and improvements
+
+- Add support for `vertical-align` in `format` expression ([specification](https://maplibre.org/maplibre-style-spec/expressions/#format))([#5043](https://github.com/maplibre/maplibre-gl-js/pull/5043)).
+
+### 🐞 Bug fixes
+
+- Render frame synchronized again in requestAnimationFrame callback ([#4535](https://github.com/maplibre/maplibre-gl-js/pull/4535))
+
 ## 5.0.1
 
 ### ✨ Features and improvements
