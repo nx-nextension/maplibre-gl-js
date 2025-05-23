@@ -536,6 +536,7 @@ export class MapMouseEvent extends Event implements MapLibreEvent<MouseEvent> {
     _defaultPrevented: boolean;
 
     constructor(type: string, map: Map, originalEvent: MouseEvent, data: any = {}) {
+        originalEvent = originalEvent instanceof MouseEvent ? originalEvent : new MouseEvent(type, originalEvent);
         const point = DOM.mousePos(map.getCanvas(), originalEvent);
         const lngLat = map.unproject(point);
         super(type, extend({point, lngLat, originalEvent}, data));
@@ -750,9 +751,13 @@ export type MapProjectionEvent = {
     type: 'projectiontransition';
     /**
      * Specifies the name of the new projection.
-     * Additionally includes 'globe-mercator' to describe globe that has internally switched to mercator.
+     * For example: 
+     * 
+     *  - `globe` to describe globe that has internally switched to mercator
+     *  - `vertical-perspective` to describe a globe that doesn't change to mercator
+     *  - `mercator` to describe mercator projection
      */
-    newProjection: ProjectionSpecification['type'] | 'globe-mercator';
+    newProjection: ProjectionSpecification['type'];
 };
 
 /**
